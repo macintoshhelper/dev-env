@@ -1,6 +1,11 @@
 # VSCode JavaScript Setup
 
-## Extensions
+## Extract Extension List
+```sh
+code --list-extensions | xargs -L 1 echo code --install-extension
+```
+
+## Recommended Extensions
 
 ```sh
 code --install-extension christian-kohler.path-intellisense # Resolve file paths for autocomplete + warnings
